@@ -40,3 +40,7 @@ Using up bits that would normally be in the host portion of the IP address for d
 **How do the network and broadcast addresses define the usable range?**
 
 The usable range is the range of addresses that can be assigned to hosts within a given subnet. The network address is the first address of the subnet and the broadcast address is the last address of the subnet. In more general terms: The host portion of the IP address starts with a multiple of the block size. In this case, it would be .0, .64, .128, and so on. The broadcast address is the network address plus the block size minus 1. That would be .63, .127, and .191 for the preceding network addresses, respectively.
+
+### Bonus
+
+[CIDR Visualization](https://drive.google.com/file/d/1dzxVR1wFQAB7k2pFL8Mz9WPAXTTv-u0_/view?usp=sharing)
