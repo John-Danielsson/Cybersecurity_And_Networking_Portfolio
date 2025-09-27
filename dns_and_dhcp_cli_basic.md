@@ -13,7 +13,7 @@ I need to find the following:
 3. DHCP Enabled
 
 1. I use ```ipconfig getifaddr en0``` and get ```10.0.0.115```.
-2. I use ```ipconfig getpacket en0```, look for ```server_identifier (ip)``` in the output and get ```10.0.0.1```.
+2. I use ```ipconfig getpacket en0```, look for ```server_identifier (ip)``` in the output, and get ```10.0.0.1```.
 3. Using the command above, I look to see if the lease time is present. It is, which means that DHCP is enabled.
 
 ### DNS
