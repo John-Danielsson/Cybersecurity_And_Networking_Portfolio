@@ -30,7 +30,7 @@ Open Wireshark and select your active network interface (Wi-Fi or Ethernet).
 
 Click the green shark fin icon to start capturing.
 
-In CMD/Terminal, run: ping google.com
+In CMD/Terminal, run: ```ping google.com```
 
 Let it run ~10 pings, then stop the capture (red square icon).
 
@@ -46,7 +46,7 @@ Example observation: “Router at 192.168.1.1 forwarded ICMP echo requests to Go
 
 **How did tracert/traceroute reveal the router’s role?**
 
-I saw how many hops were required for the packets from my computer to travel to google.com. That showed me how the router helps me access information from the wider Internet and also delivers information to me in the form of packets.
+I saw how many hops were required for the packets from my computer to travel to ```google.com```. That showed me how the router helps me access information from the wider Internet and also delivers information to me in the form of packets.
 
 **What did Wireshark add to your understanding?**
 
