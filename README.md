@@ -1,2 +1,2 @@
 # Cybersecurity_And_Networking_Portfolio
-My portfolio demonstrating my understand of cybersecurity and networking concepts.
+My portfolio demonstrating my understanding of cybersecurity and networking concepts.
