@@ -54,3 +54,7 @@ Even just letting WireShark run for 30 seconds resulted in hundreds of packets.
 I didn't have any good real-time visual for just how much information is flying around the Internet, even in my small home Wi-Fi network.
 WireShark also gave me a better sense of different protocols are used for different purposes across the Internet.
 For example, my ```ping``` requests used the ICMP protocol instead of something like UDP, which makes sense since ICMP is used by network devices to send operational information to each other.
+
+**How did Wireshark help you understand the role of ports in communication? What did you learn about protocol-port relationships?**
+
+I got a visual representation of how ports designate what type of service or protocol is being executed. It helped me understand that port numbers guide traffic to the correct service. An analogy would be that packets are letters, port numbers are mail slots, and protocols are the language that the letter is written in.
