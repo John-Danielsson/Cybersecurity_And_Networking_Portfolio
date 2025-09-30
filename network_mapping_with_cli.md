@@ -213,20 +213,31 @@ mdns.mcast.net     1:0:5e:0:0:fb      UHmLWI            en0
 
 **Step 4: Wrap-Up**
 
-Share: Post one interesting finding (e.g., your tracert output) in the challenge group or forum.
+**Write one interesting finding (e.g., your tracert output).**
 
-Reflect: How many devices appeared in your arp -a output? What’s your average ping time to Google?
+I thought my ARP table would have way fewer entries, but when I consider the amount of Internet-connected devices in my house, it makes sense.
+
+**How many devices appeared in your arp -a output?**
+
+16
+
+**What’s your average ping time to Google?**
+
+15.005ms
 
 ### Quick Quiz
 
-**What does ipconfig tell you?**
+**What does ifconfig tell you?**
 
-
+The command tells me the configuration of all the interfaces on my computer.
 
 **Why use tracert instead of ping?**
 
-
+To see each hop that a packet takes on the route to its destination.
 
 **What’s one thing netstat -an shows?**
 
+The listening ports on your computer. The command ```netstat -an``` displays all active network connections and listening ports on a computer.
+
+The ```a``` flag means all connections and the ```n``` flag displays the connections and ports numerically.
 
