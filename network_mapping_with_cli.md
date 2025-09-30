@@ -5,45 +5,53 @@
 Tools Needed: Command Prompt (Windows) or Terminal (macOS/Linux).
 
 **Part 1: Local Network**
-ipconfig / ifconfig
 
-Windows: ipconfig | macOS/Linux: ifconfig
+```ipconfig``` / ```ifconfig```
+
+Windows: ```ipconfig``` | macOS/Linux: ```ifconfig```
 Look for IPv4 address, subnet mask, default gateway.
-Example: IPv4: 192.168.1.10, Subnet: 255.255.255.0, Gateway: 192.168.1.1.
+Example: IPv4: ```192.168.1.10```, Subnet: ```255.255.255.0```, Gateway: ```192.168.1.1```.
 ping (local)
 
-Run: ping [your gateway] (e.g., ping 192.168.1.1)
+Run: ```ping [your gateway]``` (e.g., ```ping 192.168.1.1```)
+
 Check reply time and TTL.
-Example: Reply from 192.168.1.1: time=1ms TTL=64 → Router is up, quick response.
-arp -a
 
-Run: arp -a
+Example: Reply from ```192.168.1.1```: time=1ms TTL=64 → Router is up, quick response.
+
+```arp -a```
+
+Run: ```arp -a```
 Review IP-to-MAC address mappings for local devices.
-Example: 192.168.1.1 00-14-22-01-23-45 → Router’s MAC address.
-netstat -an
+Example: ```192.168.1.1 00-14-22-01-23-45``` → Router’s MAC address.
 
-Run: netstat -an
+```netstat -an```
+
+Run: ```netstat -an```
 View active TCP/UDP connections.
-Example: TCP 192.168.1.10:49152 142.250.190.78:443 ESTABLISHED → Active HTTPS connection.
+Example: ```TCP 192.168.1.10:49152 142.250.190.78:443 ESTABLISHED``` → Active HTTPS connection.
 
 
 **Part 2: Internet Path**
 
-ping (public)
+```ping``` (public)
 
-Run: ping 8.8.8.8
+Run: ```ping 8.8.8.8```
 Check response time and stability.
-Example: Reply from 8.8.8.8: time=20ms TTL=117 → Google DNS reachable.
-tracert / traceroute
+Example: ```Reply from 8.8.8.8: time=20ms TTL=117``` → Google DNS reachable.
 
-Windows: tracert 8.8.8.8 | macOS/Linux: traceroute 8.8.8.8
+```tracert / traceroute```
+
+Windows: ```tracert 8.8.8.8``` | macOS/Linux: ```traceroute 8.8.8.8```
 View the hops from your device to the destination.
-Example: Hop 1: 192.168.1.1, Hop 2: ISP gateway, Hop 3: upstream router, etc.
+Example: Hop 1: ```192.168.1.1```, Hop 2: ISP gateway, Hop 3: upstream router, etc.
 nslookup
 
-Run: nslookup google.com
+Run: ```nslookup google.com```
+
 View resolved IP addresses for the domain.
-Example: Name: google.com, Address: 142.250.190.78
+
+Example: Name: ```google.com```, Address: ```142.250.190.78```
 
 
 
