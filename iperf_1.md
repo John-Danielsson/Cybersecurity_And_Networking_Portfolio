@@ -75,5 +75,9 @@ Accepted connection from 10.0.0.115, port 53765
 -----------------------------------------------------------
 ```
 
+Looks like my bitrate went way up! That's not too surprising since my home WiFi could easily handle the 1080p video I was streaming on YouTube.
+
 **Step 4: Reflect**
 Write a brief reflection: What affected your performance? What conditions helped throughput improve? What did iPerf reveal about your network?
+
+While streaming the video did not seem to push my WiFi at all, I suspect that streaming 1080p videos on all of my devices simultaneously would make the video on this computer laggy. I think that what iPerf revealed about my network is that it works great for streaming (good throughput).
