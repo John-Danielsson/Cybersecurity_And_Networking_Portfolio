@@ -50,5 +50,30 @@ Switch to 5 GHz if available—most modern routers and devices support this.
 Run test again on 5 GHz. Look for improvement (e.g., “45 Mbps, 1 ms jitter”).
 Note: “Video load reduced performance. 5 GHz improved speed and reduced jitter.”
 
+```
+johndanielsson@JDs-MacBook-Air ~ % iperf3 -s
+-----------------------------------------------------------
+Server listening on 5201 (test #1)
+-----------------------------------------------------------
+Accepted connection from 10.0.0.115, port 53765
+[  5] local 10.0.0.249 port 5201 connected to 10.0.0.115 port 53766
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-1.01   sec  36.5 MBytes   305 Mbits/sec                  
+[  5]   1.01-2.01   sec  38.1 MBytes   320 Mbits/sec                  
+[  5]   2.01-3.01   sec  37.9 MBytes   318 Mbits/sec                  
+[  5]   3.01-4.00   sec  34.6 MBytes   291 Mbits/sec                  
+[  5]   4.00-5.01   sec  38.4 MBytes   321 Mbits/sec                  
+[  5]   5.01-6.01   sec  39.0 MBytes   327 Mbits/sec                  
+[  5]   6.01-7.01   sec  40.0 MBytes   336 Mbits/sec                  
+[  5]   7.01-8.00   sec  38.5 MBytes   324 Mbits/sec                  
+[  5]   8.00-9.00   sec  38.4 MBytes   321 Mbits/sec                  
+[  5]   9.00-10.01  sec  39.1 MBytes   328 Mbits/sec                  
+[  5]  10.01-10.07  sec  2.62 MBytes   357 Mbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate
+[  5]   0.00-10.07  sec   383 MBytes   319 Mbits/sec                  receiver
+-----------------------------------------------------------
+```
+
 **Step 4: Reflect**
 Write a brief reflection: What affected your performance? What conditions helped throughput improve? What did iPerf reveal about your network?
