@@ -55,16 +55,28 @@ Name: Allow-HTTPS | Priority: 100 | Protocol: TCP | Port: 443 | Action: Allow.
 
 Screenshot: HL-IPv6-VNet Overview with both IPv4 and IPv6 address spaces visible.
 
+<img width="999" height="688" alt="Screenshot 2025-10-16 at 11 26 56" src="https://github.com/user-attachments/assets/162e31f2-692a-4c0e-951f-b63ab057e8a8" />
+
 Screenshot: Subnets blade showing IPv6Subnet and its /64 range.
+
+<img width="1466" height="684" alt="Screenshot 2025-10-16 at 11 27 44" src="https://github.com/user-attachments/assets/87b650f9-ed2f-4ffe-836a-0323e7f4e3a9" />
 
 (Optional) Screenshot: HL-IPv6-NSG inbound rules table showing Allow-HTTPS (priority 100).
 
+<img width="1470" height="671" alt="Screenshot 2025-10-16 at 11 28 21" src="https://github.com/user-attachments/assets/c855bc74-f7ba-4a83-b6c0-5f1ffb8bc47f" />
+
 1–2 sentences: “Why do many IPv6 subnets use /64?”
+
+Answer: /64 is the default subnet size for IPv6 LANs.
 
 **🎯 Stretch (Only if you feel good)**
 
 Add a second IPv6 subnet 2001:db8:22:2::/64 named IPv6Private. Explain one reason you’d keep it separate from IPv6Subnet.
+
+<img width="1470" height="480" alt="Screenshot 2025-10-16 at 11 30 39" src="https://github.com/user-attachments/assets/3032651a-302f-427d-83f0-9c5193eb46d6" />
+
 Create (but don’t deploy) a Public IP (IPv6) resource in the portal to see where you’d attach it to a VM/NIC later.
+
 Write a pretend DNS note: “AAAA record points www.example.test → 2001:db8:22:1::10.” (AAAA = IPv6, A = IPv4.)
 
 **🧠 Quick Ref**
