@@ -75,6 +75,8 @@ Add a second IPv6 subnet 2001:db8:22:2::/64 named IPv6Private. Explain one reaso
 
 <img width="1470" height="480" alt="Screenshot 2025-10-16 at 11 30 39" src="https://github.com/user-attachments/assets/3032651a-302f-427d-83f0-9c5193eb46d6" />
 
+I would keep this separate for handling sensitive information. For example, if I managed a large hospital in NYC, I would want a public subnet for visitors and a private subnet for the medical staff to more securely access PHI.
+
 Create (but don’t deploy) a Public IP (IPv6) resource in the portal to see where you’d attach it to a VM/NIC later.
 
 Write a pretend DNS note: “AAAA record points www.example.test → 2001:db8:22:1::10.” (AAAA = IPv6, A = IPv4.)
