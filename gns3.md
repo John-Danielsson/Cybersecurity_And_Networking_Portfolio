@@ -12,7 +12,7 @@ Two VPCS nodes (built into GNS3)
 **Step 1 — Topology & IP Plan**
 
 Drag into the workspace: R1, R2, PC1 (VPCS), PC2 (VPCS). Cable like this:
-
+```
 PC1 ── R1 ── R2 ── PC2
 
 R1 LAN  (to PC1): 192.168.1.0/24   R1 LAN IP: 192.168.1.1
@@ -21,20 +21,20 @@ R1↔R2 link        : 10.0.0.0/30     R1: 10.0.0.1, R2: 10.0.0.2
 
 PC1 IP: 192.168.1.10/24  GW 192.168.1.1
 PC2 IP: 192.168.2.10/24  GW 192.168.2.1
-
+```
 **Step 2 — Configure the PCs (VPCS)**
-
-On PC1 console
+```
+# On PC1 console
 ip 192.168.1.10/24 192.168.1.1
 
-On PC2 console
+# On PC2 console
 ip 192.168.2.10/24 192.168.2.1
-
+```
 **Step 3 — Configure the Routers**
 Pick the set that matches your router image.
 
 A) Cisco IOS / vIOS
-
+```
 ! R1 (interfaces may be Gi0/0, Gi0/1, etc. Adjust to your device)
 enable
 conf t
@@ -64,8 +64,9 @@ router ospf 1
  network 192.168.2.0 0.0.0.255 area 0
 end
 wr
+```
 B) VyOS (free)
-
+```
 # R1
 configure
 set interfaces ethernet eth0 address 192.168.1.1/24
@@ -81,15 +82,17 @@ set interfaces ethernet eth1 address 192.168.2.1/24
 set protocols ospf area 0 network 10.0.0.0/30
 set protocols ospf area 0 network 192.168.2.0/24
 commit; save; exit
-
+```
 **Step 4 — Verify OSPF & Connectivity**
 
 OSPF neighbors come up
 IOS: show ip ospf neighbor
 VyOS: show ip ospf neighbor
+
 Routes are learned
 IOS: show ip route ospf
 VyOS: show ip route (look for OSPF routes)
+
 End-to-end ping
 From PC1: ping 192.168.2.10 (should succeed)
 From PC2: ping 192.168.1.10
